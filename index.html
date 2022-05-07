@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/21f5bc3ea6.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            background-color: #eaeaea;
+            position:relative;
+            margin-top:130px;
+        }
+          #container{
+            width:100%;
+            height:92px;
+            border:1px solid teal;
+            background-color: #3e3e3e;
+            position:fixed;
+            top:0px;
+           
+          }
+          #container>div:first-child{
+              width:85%;
+              height:40px;
+              /* border:1px solid red; */
+              margin-left:70px;
+          }
+          #container>div:last-child{
+              width:95%;
+              height:40px;
+              /* border:1px solid darkolivegreen; */
+              margin-left:10px;
+              margin-top:-15px;
+          }
+          #container #top ul{
+              display:flex; 
+              justify-content: space-between;
+              /* margin:auto; */
+          }
+          #container #top ul li{
+              list-style-type: none;
+              font-size: 11px;
+              
+              /* display:flex;
+              justify-content:space-evenly; */
+          }
+          #container #top ul li a{
+            text-decoration: none;
+            color:#9c9c9c;
+           
+          }
+        
+        #bottom ul{
+            display:flex;
+            justify-content: space-between;
+        }  
+        #bottom ul li{
+            list-style-type: none;
+
+        }
+        #bottom ul li a{
+            text-decoration: none;
+            color:#fafafa;
+        }
+        #bottom ul li a:hover{
+            text-decoration:underline;
+            
+        }
+        #footer{
+            width:100%;
+            height:auto;
+            /* border:1px solid red; */
+            display:flex;
+            margin-top:30px;
+            background-color: #d3c6a4;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #box1{
+            width:20%;
+            height:150px;
+            border:1px solid darkgreen;
+        }
+        #box1 img{
+           margin-left:50px;
+           margin-top:10px;
+        }
+        #box1 p{
+            margin-left:50px;
+            margin-top:10px;
+        }
+        #box1 ul{
+            display:flex;
+            margin-top:-15px;   
+        }
+        
+        #box1 ul li{
+            list-style-type: none;
+            margin:8px;
+            font-size: 20px;
+        }
+        #box2{
+            width:80%;
+            height:150px;
+            border:1px solid darkgoldenrod;  
+        }
+        .b1 ul{
+            display:flex;
+            /* margin:30px; */
+        }
+        .b1 ul li{
+            list-style-type: none;
+           margin-left:13px;
+           font-size: 14px;
+        }
+        .b2 ul{
+            display:flex;
+        }
+        .b2 ul li{
+            list-style-type:none;
+            margin-left:13px;
+            font-size:14px;
+        }
+        .b3{
+            margin-left:50px;
+            margin-top:15px;
+            font-size:15px;
+        }
+        #box1 div{
+            width:70%;
+            height:32px;
+            border:1px solid blue;
+            margin:auto;
+            margin-top:-10px;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
+        #box1 div input{
+            height:90%;
+            width:80%;
+            border:none;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+            font-size: 20px;
+            /* font-weight: 100px; */
+        }
+        hr{
+            width:90%;
+        }
+        #viph_head{
+            width:54%;
+            height:20px;
+            /* border:1px solid red; */
+            display:flex;
+            justify-content: space-between;
+            margin-left:55px;
+            margin-top:50px;
+        }
+        #dabba1{
+            width:95%;
+            height:400px;
+            /* border:1px solid darkmagenta; */
+            margin:auto;
+            display:flex;
+            /* margin-top:50px; */
+        }
+        
+        #dabba1>div{
+            width:47%;
+            height:390px;
+            border:1px solid darkred;
+            margin:auto;
+            display:flex;
+            background-color:#ffffff;
+            border-radius:5px;
+        }
+        
+        .dabba2 .big{
+            width:58%;
+            height:380px;
+            /* border:1px solid darkgoldenrod; */
+            margin:auto;
+            margin-top:15px;
+            margin-left:10px;
+          
+        }
+        /* .dabba2 div i{
+            margin-top:80px;
+        } */
+        .dabba2 div img{
+            width:100%;
+            height:58%;
+            border-radius:5px;
+        }
+        .dabba2 .small{
+            width:40%;
+            height:380px;
+            /* border:1px solid darkgoldenrod; */
+            margin:auto;
+            margin-top:15px;
+          
+        }
+        .dabba2 .small div{
+            width:90%;
+            height:48%;
+            /* border:1px solid rgb(30, 28, 5); */
+            margin:auto;
+            margin-top:5px;
+        }
+        .small div img{
+            border-radius:5px;
+        }
+        .small div h4{
+            margin-top:-2px;
+        }
+        .big h2{
+            margin-top:5px;
+            font-style:italic;
+            font-weight:900;
+            font-size:26px;
+            /* margin-left:10px; */
+            
+        }
+        #second_last{
+            width:95%;
+            height:380px;
+            /* border:1px solid tomato; */
+            margin:auto;
+            display:flex;
+        }
+        #second_last div{
+            width:30%;
+            height:380px;
+            border:1px solid darkcyan;
+            margin:auto;
+            background-color: white;
+            border-radius: 5px;
+        }
+        #second_last div img{
+            width:100%;
+            border-radius:5px;
+        }
+        #second_last div h3{
+            margin-top:5px;
+            margin-left:15px;
+        }
+        #second_last div hr{
+            margin-top:10px;
+        }
+        #second_last div p{
+            margin-top:3px;
+            margin-left:15px;
+        }
+        #article{
+            width:91.5%;
+            height:430px;
+            /* border:1px solid red; */
+            margin:auto;
+            margin-top:30px;
+            display:flex;
+            background-color: white;
+        }
+        #article>div{
+            width:16%;
+            height:400px;
+            margin:auto;
+            /* border-left:1px solid darkgoldenrod; */
+            margin-top:20px;
+            /* margin-left:10px; */
+        }
+        #article>div h4{
+            margin-top:-3px;
+            margin-left:15px;
+        }
+        #article>div>div{
+            width:88%;
+            height:370px;
+            /* border:1px solid darkcyan; */
+            margin:auto;
+            margin-top:-10px;
+            margin-left:15px;
+        }
+        #article>div>div img{
+            width:100%;
+            height:37%;
+        }#article>div>div h4{
+            font-size:18px;
+            font-weight: lighter;
+            margin-left:-3px
+            /* text-align:center; */
+        }
+        #article>div>div p{
+            text-align:center;
+        }
+        #news{
+            width:95%;
+            height:580px;
+            /* border:1px solid darkorchid; */
+            margin:auto;
+            margin-top:30px;
+            display:flex;
+            /* margin:auto; */
+        }
+        .news1{
+            width:23%;
+            height:560px;
+            /* border:1px solid darkorange; */
+            margin:auto;
+        }
+        .news1 div{
+            width:98%;
+            height:130px;
+            /* border-bottom: 1px solid red; */
+            display:flex;
+            margin:auto;
+            margin-top:-20px;
+        }
+        .news1>div>img{
+            width:60%;
+            height:50%;
+            margin-top:30px;
+        }
+        .news1>div>p{
+            /* margin-left:20px; */
+            margin-right:30px;
+            font-size:17px;
+            margin-top:20px;
+        }
+       
+        .news2{
+            width:44%;
+            height:560px;
+            /* border:1px solid darkgreen; */
+            margin:auto;
+            margin-top:10px;
+          
+        }
+         .news2>div{
+            width:98%;
+            height:26%;
+            /* border:1px solid darkmagenta; */
+            display:flex; 
+            margin:auto;
+            margin-top:-20px;
+            /* margin-top:20px; */
+        }
+        .news2_img{
+            width:30%;
+            height:140px;
+            /* border:1px solid red; */
+            margin:auto;
+        }
+        .news2_img img{
+            width:100%;
+            height:100%;
+        }
+        .news2_content{
+            width:62%;
+            height:140px;
+            /* border:1px solid darkgreen; */
+            margin:auto;
+        } 
+        .news2_content h4{
+            margin-top:-3px;
+        }
+        .news2_content hr{
+            margin-top:-10px;
+        }
+        .news2_content p{
+            margin-top:5px;
+        }
+        #imagess{
+            height:150px;
+            display:inline-block;
+        }
+        #imagess img{
+            width:100%;
+            height:100%;
+            margin-top:0px;
+           
+        }
+        #imagess p{
+            margin-top:-90px;
+            color:white;
+
+        }
+        #points{
+            width:92%;
+            height:520px;
+            /* border:1px solid darkkhaki; */
+            margin:auto;
+            margin-top:60px;
+            display:flex;
+        }
+        #points>div{
+            width: 24%;
+            height:510px;
+            /* border:1px solid darkmagenta; */
+            margin:auto;
+           
+        }
+        #points>div>div{
+            width:95%;
+            height:100px;
+            /* border:  1px solid darkorange; */
+            display:flex;
+            /* margin-top:-40px; */
+        }
+        #points>div>div img{
+            width:70px;
+            height:60px;
+            margin-top:20px;
+        }
+        p{
+            font-size:17px;
+            text-align:left;
+            margin-right:25px;
+            margin-top:20px
+        }
+        #imagesss .dude{
+            height:150px;
+            display:inline-block;
+        }
+        #imagesss .dude img{
+            width:100%;
+            height:100%;
+            margin-top:0px;
+           
+           
+        }
+        #imagesss .dude h3{
+            margin-top:-80px;
+            color:white;
+
+        }
+        #imagessss .dude1{
+            height:150px;
+            display:inline-block;
+        }
+        #imagessss .dude1 img{
+            width:100%;
+            height:100%;
+            margin-top:0px;
+           
+           
+        }
+        #imagessss .dude1 p{
+            margin-top:-80px;
+            color:white;
+
+        }
+        #news_box{
+            width:93%;
+            height:570px;
+            /* border:1px solid red; */
+            margin:auto;
+            margin-top:50px;
+            display:flex;
+        }
+       .news_box1{
+           width:23%;
+           height:530px;
+           /* border:1px solid darkgoldenrod; */
+           margin:auto;
+       }
+       .news_box1>div{
+           width:100%;
+           height:20.6%;
+           /* border:1px solid darkkhaki; */
+           margin:auto;
+           display:flex;
+           margin-top:10px;
+           background-color:white;
+           border-radius: 5px;
+
+       }
+       .news_box1>div img{
+           width:70px;
+           height:50px;
+           margin-top:25px;
+           margin-left:10px;
+       }
+       .news_box1>div p{
+           font-size:16px;
+           margin-left:20px;
+           margin-top:15px;
+       }
+       .news_box2{
+           width:23%;
+           height:530px;
+           /* border:1px solid darkgoldenrod; */
+           margin:auto;
+       }
+       .news_box2>div{
+           width:100%;
+           height:22%;
+           /* border-bottom:1px solid tomato; */
+           margin:auto;
+           display:flex;
+           /* margin-top:10px; */
+           background-color: white;
+           border-radius: 5px;
+           
+         
+       }
+       .news_box2>div img{
+            width:70px;
+            height:50px;
+            margin-top:25px;
+            margin-right:10px;
+       }
+       .news_box3{
+           width:48%;
+           height:530px;
+           /* border:1px solid darkgreen; */
+           margin:auto;
+           display:flex;
+           
+       }
+       .news_box3>div{
+           width:44%;
+           height:530px;
+           /* border:1px solid darkorchid; */
+           margin:auto;
+           /* display:flex; */
+       }
+       .news_box3>div>div{
+           width:100%;
+           height:43%;
+           /* border:1px solid rosybrown; */
+           margin-bottom:15px;
+       }
+       .news_box3>div>div>img{
+           width:100%;
+           height:100%;
+       }
+       .news_box3>div>div p{
+           margin-top:-80px;
+           margin-left:20px;
+           color:white;
+           font-size:18px;
+       }
+       #tranding{
+           display:grid;
+           grid-template-columns: repeat(6,1fr);
+           grid-template-rows: 240px;
+           gap:15px;
+           width:92%;
+           margin:auto;
+           /* margin-top:20px; */
+           /* border:1px solid darkmagenta; */
+           
+
+       }
+       #tranding>div{
+            /* border:1px solid rosybrown; */
+            /* width:16%; */
+            background-color: white;
+       }
+       #tranding>div>img{
+           width:100%;
+           height:55%;
+       }
+       #tranding>div>p{
+           margin-top:-1px;
+           margin-left:15px;
+       }
+       .allbox{
+           width:90px;
+           height:25px;
+           background-color:#2b2b2b;
+           text-align: center;
+           font-size:18px;
+       }
+       .allbox h4{
+        color:white;
+        margin-top:2px;
+        
+       }
+       .allbox1{
+           width:120px;
+           height:25px;
+           background-color:#2b2b2b;
+           text-align: center;
+           font-size:17px;
+           margin-left:55px;
+           
+       }
+       .allbox1 h4{
+        color:white;
+        margin-top:25px;
+        
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="container">
+            <div id="top">
+                <ul>
+                    <li><a href="">NDTV</a></li>
+                    <li><a href="">HINDI</a></li>
+                    <li><a href="">BUSINESS</a></li>
+                    <li><a href="">MOVIES</a></li>
+                    <li><a href="">CRICKET</a></li>
+                    <li><a href="">TECH</a></li>
+                    <li><a href="">FOOD</a></li>
+                    <li><a href="">CRYPTO</a></li>
+                    <li><a href="">WEB STORIES</a></li>
+                    <li><a href="">EDUCATION</a></li>
+                    <li><a href="">AUTO</a></li>
+                    <li><a href="">SWASTH</a></li>
+                    <li><a href="">LIFESTYLE</a></li>
+                    <li><a href="">HEALTH</a></li>
+                    <li><a href="shoping.html">SHOPPING</a></li>
+                    <li><a href="">ART</a></li>
+                </ul>
+            </div>
+            <div id="bottom">
+              <ul>
+                <li><a href=""><img src="https://drop.ndtv.com/homepage/images/ndtvlogo23march.png" alt=""></a></li>
+                <li><a href="">LIVE TV</a></li>
+                <li><a href="">LATEST</a></li>
+                <li><a href="">COVID</a></li>
+                <li><a href="">INDIA</a></li>
+                <li><a href="">OPINION</a></li>
+                <li><a href="">VIDEO</a></li>
+                <li><a href="">CITIES</a></li>
+                <li><a href="">WORLD</a></li>
+                <li><a href="">OFFBEAT</a></li>
+                <li><a href="">TRENDS</a></li>
+                <li><a href="">PHOTOS</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="https://twitter.com/ndtv"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/ndtv?campaign_id=237467320636"><i class="fa-brands fa-facebook-square"></i></a></li>
+                <li><a href="https://www.kooapp.com/profile/ndtv"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                
+
+              </ul>
+            </div>
+        </div>
+    </header>
+    <div class="allbox1"><h4>TRANDING</h4></div>
+    <div id ="tranding">
+       
+        <div>
+            <img src="https://c.ndtvimg.com/2022-05/8iautdlc_pm-modi-denmark-pm-twitter_120x90_03_May_22.jpg" alt="">
+            <p>Watch: PM's Conversations In Copenhagen, Danish PM's "Special Gesture"</p>
+        </div>
+        <div>
+            <img src="https://c.ndtvimg.com/2022-05/gna9j5qg_chiranjeevi_120x90_03_May_22.jpg" alt="">
+            <p>Chiranjeevi Takes His "First International Flight" Since The Pandemic</p>
+        </div>
+        <div>
+            <img src="https://c.ndtvimg.com/2022-05/c1qsnlb_pm-1993-germany-visit_120x90_03_May_22.jpg" alt="">
+            <p>Then And Now: PM's 1993 Germany Trip Photo Surfaces Amid Berlin Visit</p>
+        </div>
+        <div>
+            <img src="https://c.ndtvimg.com/2022-05/f0kt7uh8_modi-macron-pti-narendra-modi-emmanuel-macron-pti_120x90_03_May_22.jpg" alt="">
+            <p>Day Ahead Of PM Modi's Visit, France Backs Out Of Key Submarine Project</p>
+        </div>
+        <div>
+            <img src="https://c.ndtvimg.com/2022-04/bneklk1g_raj-thackeray-pti_120x90_28_April_22.jpg" alt="">
+            <p>"Leaves Cancelled": Maharashtra Cops On Alert After Raj Thackeray Warning</p>
+        </div>
+        <div>
+            <img src="https://c.ndtvimg.com/2022-04/cqgiq278_harshal-patel-bcciipl_625x300_27_April_22.jpg?im=FeatureCrop,algorithm=dnn,width=240,height=180" alt="">
+            <p>"Worked At Pakistani Guy's Perfume Store": RCB Star On Experience In USA</p>
+        </div>
+    </div>
+    <div id="news_box">
+        <div class="news_box1">
+            <h3>HINDI NEWS</h3>
+            <div>
+                <img src="https://c.ndtvimg.com/2022-05/5fs09v3g_clashes-in-jodhpur-on-eid_240x180_03_May_22.jpg?downsize=80:60" alt="">
+                <p>जोधपुर में हिंसक झड़प के बाद 10 थाना क्षेत्रों में कर्फ्यू, 4 जवान घायल: 10 बड़ी बातें</p>
+            </div>
+            <div>
+                <img src="https://c.ndtvimg.com/2019-12/s6fpesqo_nitish-kumar-prashant-kishor_625x300_29_December_19.jpg?downsize=80:60" alt="">
+                <p>प्रशांत किशोर का इंतजार करते रह गए नीतीश कुमार, नहीं आए पीके; सूत्रों ने बताया ऐसा क्यों?</p>
+            </div>
+            <div>
+                <img src="https://c.ndtvimg.com/2021-12/fauasuf8_akhilesh-yadav-shivpal-yadav-_120x90_16_December_21.jpg?downsize=80:60" alt="">
+                <p>"हमने उसे चलना सिखाया, और वो हमें रौंदता चला गया..." : फिर छलका चाचा शिवपाल यादव का दर्द</p>
+            </div>
+            <div>
+                <img src="https://c.ndtvimg.com/2022-05/iupn364k_rahul-gandhi-nepal-twitter_120x90_03_May_22.jpg?downsize=80:60" alt="">
+                <p>"नवाज शरीफ के साथ केक नहीं काटा": राहुल गांधी के दोस्त की शादी में शरीक होने पर कांग्रेस का जवाब</p>
+            </div>
+        </div>
+        <div class="news_box3">
+            <div>
+                <h3>CRICKET NEWS</h3>
+                <div>
+                    <img src="https://i.ndtvimg.com/i/2017-03/glenn-maxwell-ranchi-test-india-vs-australia-650_650x400_61489727888.jpg?downsize=242:182" alt="">
+                    <p>Australia Coach Talks About Why Glenn Maxwell Wasn't Handed Test Recall</p>
+
+                </div>
+                <div>
+                    <img src="https://c.ndtvimg.com/2022-05/cv70or5o_mohsin-khan_120x90_02_May_22.jpg?downsize=242:182" alt="">
+                    <p>IPL: Training With Shami In Lockdown Helped "Gentle Giant" Mohsin Khan</p>
+                </div>
+            </div>
+
+            <div>
+                <p>READ IN: HINDI</p>
+                <div>
+                    <img src="https://c.ndtvimg.com/2022-05/5gbvqrco_jay-shah-jason-warne-twitter_120x90_03_May_22.jpg?downsize=242:182" alt="">
+                    <p>BCCI Secretary Jay Shah Meets Shane Warne's Younger Brother</p>
+                </div>
+                <div>
+                    <img src="https://c.ndtvimg.com/2022-05/hgsu45g8_kallis-smith-afp_625x300_02_May_22.jpg?downsize=242:182" alt="">
+                    <p>"15 Runs Short": Smith Reveals What Kallis Said After Aus Plundered 434</p>
+                </div>
+            </div>
+        </div>
+        <div class="news_box2">
+            <h3>BUSINESS NEWS</h3>
+            <div>
+                <p>Citi Trader's Error Wiped Out $315 Billion From Europe Stocks In Minutes</p>
+                <img src="https://c.ndtvimg.com/2022-05/5npebf0g_citi-trader_625x300_03_May_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+            </div>
+        
+            <div>
+                <p>LIC's Mega IPO To Open On May 4: Here's What Experts Said</p>
+                <img src="https://c.ndtvimg.com/2022-02/cttm1th8_lic-new_625x300_14_February_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+            </div>
+
+            <div>
+                <p>Adani Wilmar Buys Kohinoor Basmati Rice Brand From McCormick Switzerland</p>
+                <img src="https://c.ndtvimg.com/2021-12/725vbnt_adani-group_625x300_27_December_21.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+            </div>
+        
+            <div>
+                <p>Akshaya Tritiya 2022: Jewellers Expect Business Of Up To 30 Tonnes</p>
+                <img src="https://c.ndtvimg.com/2022-03/ms8cqrug_gold-price_625x300_21_March_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="points">
+        <div id="imagesss">
+            <h3>AUTO NEWS</h3>
+            <div class="dude">
+                <img src="https://c.ndtvimg.com/2022-05/555no54_honda-city-ehev-_625x300_01_May_22.jpg?im=FaceCrop,algorithm=dnn,width=290,height=218" alt="">
+                <h3>Review: Honda City e:HEV Hybrid</h3>
+            </div>
+            <div>
+                <p>Review: Jeep Meridian 3-Row SUV</p>
+                <img src="https://c.ndtvimg.com/2022-05/gpcjae98_jeep-meridian-suv-review_625x300_01_May_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+            </div>
+            <div>
+                <p>TVS NTorq 125 XT With New Connected Features Launched, Details Here</p>
+                <img src="https://c.ndtvimg.com/2022-05/komr1428_tvs-ntorq-125-xt_625x300_02_May_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+            </div>
+            <div>
+                <p>Mahindra Sales Grow Year-On-Year In April 2022, Down From March</p>
+                <img src="https://c.ndtvimg.com/2021-09/ubflehb8_mahindra-xuv700_650x400_30_September_21.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+            </div>
+        </div>
+        
+        <div>
+            <h3>EDUCATION</h3>
+            <div>
+                <p>JEE Main 2022: How To Prepare For The Exam In Last One Month</p>
+                <img src="https://cache.careers360.mobi/media/presets/625X300/article_images/2022/4/30/Study-featured-image.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                
+            </div>
+            <hr>
+            <div>
+                <p>Karnataka Institution To Offer Free Education To Children Of Kashmiri Pandits</p>
+                <img src="https://cache.careers360.mobi/media/presets/625X300/article_images/2022/4/30/education-news-featured-image.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                
+            </div>
+            <hr>
+            <div>
+                <p>Academicians Back Goa Minister's Appeal To Check Use Of Smartphones</p>
+                <img src="https://cache.careers360.mobi/media/presets/625X300/article_images/2022/5/1/online-class-featured-image.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                
+            </div>
+            <hr>
+            <div>
+                <p>VP M Venkaiah Naidu Pitches For Early Education In Mother Tongue</p>
+                <img src="https://cache.careers360.mobi/media/presets/625X300/article_images/2022/4/30/vice-president-naidu-featured-image.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+            
+            </div>
+        </div>
+        <div  id="imagessss">
+            <h3>FOOD</h3>
+            <div class="dude1">
+                <img src="https://c.ndtvimg.com/2022-04/o3alre3o_watermelon_625x300_25_April_22.jpg?downsize=290:218" alt="">
+                <p>Did You Know: Watermelons Shouldn't Be Stored In Fridge - Here's Why</p>
+            </div>
+            <div>
+                <p>Blood Pressure Diet: 5 Indian Recipes That May Help Manage Blood Pressure</p>
+                <img src="https://i.ndtvimg.com/i/2017-09/dahi-bhindi_656x418_61506420805.jpg?downsize=80:60" alt="">
+            </div>
+            <div>
+                <p>From Momos To Thukpa: 5 Tibetan Street Food Recipes You Must Try</p>
+                <img src="https://c.ndtvimg.com/2020-12/119rgius_chicken-thukpa_640x480_20_December_20.jpg?downsize=80:60" alt="">
+            </div>
+            <div>
+                <p>Amazon Summer Sale 2022 Starts on 4th May; Up to 62% Off On Cookware</p>
+                <img src="https://c.ndtvimg.com/2020-11/n9ppi298_cookware_625x300_30_November_20.jpg?downsize=80:60" alt="">
+            </div>
+        </div>
+        <div>
+            <h3>LIFESTYLE</h3>
+            <div>
+                <p>5 Celebrity-Approved Outfits To Celebrate Eid Fashionably</p>
+                <img src="https://c.ndtvimg.com/2022-05/dt2l4f1g_eid-trends_240x180_03_May_22.jpg?downsize=80:60" alt="">
+            </div>
+            <hr>
+            <div>
+                <p>Kim Kardashian Makes Fashion History In Marilyn Monroe's Iconic Gown</p>
+                <img src="https://c.ndtvimg.com/2022-05/7qhe5d28_kim-kardashian_240x180_03_May_22.jpg?downsize=80:60" alt="">
+            </div>
+            <hr>
+            <div>
+                <p>Kareena Kapoor Is Summer Ready In A Bubblegum Pink Maxi Dress</p>
+                <img src="https://c.ndtvimg.com/2022-05/lulco598_kareena-kapoor_240x180_03_May_22.jpg?downsize=80:60" alt="">
+            </div>
+            <hr>
+            <div>
+                <p>Jacqueline Fernandez's Denim Dress Is Great For A Fizzy Start To Summer</p>
+                <img src="https://c.ndtvimg.com/2022-05/ruddapdo_jacquelinedenimpepsi1_240x180_02_May_22.jpg?downsize=80:60" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="news">
+            <div class="news1">
+                <h3>INDIA NEWS</h3>
+                <div>
+                    <p>Row Over Rahul Gandhi's Visit to Osmania University, Students Go To Court</p>
+                    <img src="https://c.ndtvimg.com/2022-04/0fu6enr8_rahul-gandhi-pti_120x90_21_April_22.jpg?downsize=100:75" alt="">
+                </div>
+                <hr>
+                <div>
+                    <p>With Songs, Dance, Indians In Berlin Give Grand Welcome To PM Modi</p>
+                    <img src="https://c.ndtvimg.com/2022-05/t9l4g6i8_pm-modi-in-berlin_120x90_02_May_22.jpg?downsize=100:75" alt="">
+                </div>
+                <hr>
+                <div>
+                    <p>Tesla Will Benefit If It Makes Electric Vehicles In India: Nitin Gadkari</p>
+                    <img src="https://c.ndtvimg.com/2022-05/mnhg5ri4_nitin-gadkari-240_120x90_02_May_22.jpg" alt="">
+                </div>
+                <hr>
+                <div>
+                    <p>CBI Files Fresh Case Of Cheating Against Fugitive Mehul Choksi</p>
+                    <img src="https://c.ndtvimg.com/2021-11/pns14sa8_mehul-choksi_120x90_29_November_21.jpg" alt="">
+                </div>
+            </div>
+            <div class="news1">
+                <h3>OFFBEAT</h3>
+                <div id="imagess">
+                    <img src="https://c.ndtvimg.com/2022-05/bca4rp1g_drunk-driving_120x90_02_May_22.jpg?downsize=290:218" alt="">
+                    <p>Woman In US Who Drove Down Stairs Blames GPS, Police Say She Was Drunk</p>
+                </div>
+                <hr>
+                <div>
+                    <p>"Angel On Duty": Internet On Boy Giving Water Bottles To Roadside Vendors</p>
+                    <img src="https://c.ndtvimg.com/2022-05/hss6psp_boy-distributes-water-bottle-240_120x90_02_May_22.jpg?downsize=100:75" alt="">
+                </div>
+                <hr>
+                <div>
+                    <p>Watch: 70-Year-Old American Stuns Internet By Finishing 100-Metre Dash In Less Than 14 Seconds</p>
+                    <img src="https://c.ndtvimg.com/2022-05/a35ucpco_kish-240_120x90_02_May_22.jpg" alt="">
+                </div>
+                <hr>
+                <div>
+                    <p>World's Largest Bottle Of Whisky Set To Be Auctioned On May 25 In UK</p>
+                    <img src="https://c.ndtvimg.com/2022-05/fvppno5g_whisky-240_120x90_02_May_22.jpg" alt="">
+                </div>
+            </div>
+            <div class="news2">
+                <h3>SPOTS NEWS</h3>
+                <div>
+                    <div class="news2_img">
+                        <img src="https://c.ndtvimg.com/2022-03/7977eq38_rafael-nadal-press-conference-afp_625x300_15_March_22.jpg?downsize=210:158" alt="">
+                    </div>
+                    <div class="news2_content">
+                        <h4>Wimbledon Ban On Russian And Belarusian Players "Unfair: Rafael Nadal</h4>
+                        <hr>
+                        <p>Arsenal Stay Ahead Of Tottenham In Top Four Race With 2-1 Win vs West Ham</p>
+                        <hr>
+                        <p>Everton Earn Priceless Win Over Chelsea, Tottenham Hotspur Into Top Four</p>
+                    </div>
+                </div>
+                <h3>HEALTH</h3>
+                <div>
+                    <div class="news2_img">
+                        <img src="https://c.ndtvimg.com/2021-05/jv2sqs08_yogurt_625x300_12_May_21.jpg?im=FaceCrop,algorithm=dnn,width=210,height=158" alt="">
+                        
+                    </div>
+                    <div class="news2_content">
+                        <h4>Did You Know These Foods Can Actually Boost Weight Loss</h4>
+                        <hr>
+                        <p>Hormonal Imbalance: Know The Very First Signs And Ways To Manage It</p>
+                        <hr>
+                        <p>Here's How You Can Create A Rainbow Diet; Know It's Health Benefits</p>
+                      
+                        
+                    </div>
+                </div>
+                <h3>ART & DESIGN</h3>
+                <div>
+                    <div class="news2_img">
+                        <img src="https://c.ndtvimg.com/2022-01/5741de18_mojarto_650x400_31_January_22.jpg?im=FaceCrop,algorithm=dnn,width=210,height=158" alt="">
+                    </div>
+                    <div class="news2_content">
+                    
+                        <h4>Wearing A Mask Is The Trend Today! Get Into The Trend And Be Safe!</h4>
+                        <hr>
+                        <p>4 Artworks On Pet Animals That Will Make You Fall In Love With Them Again</p>
+                        <hr>
+                        <p>3 Artists Who Capture The Innocence Of Childhood</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="article">
+        <div>
+            <h4>CITIES</h4>
+            <div>
+                <img src="https://c.ndtvimg.com/2020-07/9k3e22n_noida-police-generic-_120x90_23_July_20.jpg?downsize=213:160" alt="">
+                <h4>2 Customers Attacked With Knife By Noida Restaurant Staff Over Coffee Order</h4>
+                <hr>
+                <p>"Heatwave Abating" Conditions In Most Parts Of Country: Weather Office
+                </p>
+            </div>
+        </div>
+        <div>
+            <h4>SOUTH NEWS</h4>
+            <div>
+                <img src="https://c.ndtvimg.com/2021-09/349b9hdc_basavaraj-bommai_120x90_15_September_21.jpg?downsize=213:160" alt="">
+                <h4>Will Karnataka Chief Minister Change Again? Buzz Over Amit Shah Visit</h4>
+                <hr>
+                <p>Pregnant Woman Kidnapped In Front Of Family At Train Station, Gang-Raped</p>
+            </div>
+        </div>
+        <div>
+            <h4>WORLD NEWS</h4>
+            <div>
+                <img src="https://c.ndtvimg.com/2022-02/m5k63ftg_elon-musk_120x90_25_February_22.jpg?downsize=213:160" alt="">
+                <h4>More Than Half Of Elon Musk's Twitter followers Are Fake, Claims Online Tool</h4>
+                <hr>
+                <p>Australian PM's Chicken Korma "Raw", Says Internet. He Responds</p>
+            </div>
+        </div>
+        <div>
+            <h4>PEOPLE</h4>
+            <div>
+                <img src="https://c.ndtvimg.com/2021-06/pq6fb1h_lieutenant-general-manoj-pandeeastern-army-command_120x90_02_June_21.jpg?downsize=213:160" alt="">
+               <h4>Lieutenant General Manoj Pande Is First Engineer To Be Army Chief: 10 Points</h4>
+               <hr>
+               <p>"Super-Talented" Vedant Patel "Helps President Every Day": White House</p>
+            </div>
+        </div>
+        <div>
+            <h4>JOBS</h4>
+            <div>
+                <img src="https://c.ndtvimg.com/2019-01/85ab4h4_classroom-generic-pixabay_625x300_06_January_19.jpg?im=FaceCrop,algorithm=dnn,width=213,height=160" alt="">
+                <h4>"Super-Talented" Vedant Patel "Helps President Every Day": White House</h4>
+                <hr>
+                <p>TEJAS': New Scheme To Skill India's UAE Workforce Decoded</p>
+            </div>
+        </div>
+        <div>
+            <h4>FASHION</h4>
+            <div>
+                <img src="https://c.ndtvimg.com/2022-05/l4krmcm8_taragoldendollyj1_240x180_02_May_22.jpg?downsize=213:160" alt="">
+                <h4>Tara Sutaria's Embellished Golden Gown Is Better Than Pure 24 Karat Gold</h4>
+                <hr>
+                <p>With Priyanka Chopra's Gingham Swimsuit, Pool Days Haven't Looked Better</p>
+            </div>
+        </div>
+        <!-- <div></div> -->
+    </div>
+    <div class="allbox1">
+        <h4>CAMPAIGNS</h4>
+    </div>
+    <div id="second_last">
+        
+        <div>
+            <img src="https://c.ndtvimg.com/2022-04/dhinto68_bsi_240x180_28_April_22.jpg?downsize=392:241" alt="">
+            <h3>COVID-19 Cases Continue To Rise In The National Capital, Is It Time To Worry?</h3>
+            <hr>
+            <p>Watch: COVID-19 Vs Other Pandemics And The Role Of Genome Sequencing In Fighting Diseases</p>
+
+        </div>
+        <div>
+            <img src="https://c.ndtvimg.com/2022-04/4mtlro7o_bsi_240x180_28_April_22.jpg?downsize=392:241" alt="">
+            <h3>How Aarogyadoots – The Ambassador Of Health Brought Down Infant Mortality Rate In Rural Gadchiroli</h3>
+            <hr>
+            <p>Government Schemes And Programmes Targeting Mothers, Children And Young Adults</p>
+        </div>
+        <div>
+            <img src="https://c.ndtvimg.com/2022-03/4n2iel3_justiceforeverychild_650x400_02_March_22.jpg?downsize=392:241" alt="">
+            <h3>#Justice4EveryChild: Donate Now To Ensure Timely Justice For Child Victims Of Sexual Abuse</h3>
+            <hr>
+            <p>25-Year-Old From Maharashtra Caught Sharing Child Pornography</p>
+        </div>
+    </div>
+    <!-- last -->
+    <div id ="body">
+        <div id="viph_head">
+            <div class="allbox">
+                <h4>VIDEO</h4>
+            </div>
+            <div class="allbox">
+                <h4>PHOTOS</h4>
+            </div>
+        </div>
+        <div id="dabba1">
+            
+            <div class="dabba2">
+                <div class="big">
+                    <img src="https://c.ndtvimg.com/2022-04/8p84q65o_chief-justice-of-india_640x480_30_April_22.jpg" alt="">
+                      
+                    <h2>Chief Justice's "Lakshman Rekha" Comment At Meet With PM, Chief Ministers1:26</h2>
+                    <i class="fa-solid fa-circle-play"></i> 
+                    
+                </div>
+                <div class="small">
+                    <div>
+                        <img src="https://c.ndtvimg.com/2022-04/usth33g4_bhagwant-mann_640x480_30_April_22.jpg?downsize=330:175" alt="">
+                        <h4>
+                            "Political Clash, Not Communal": Bhagwant Mann To NDTV On Patiala Clashes1:58</h4>
+                    </div>
+                    <div>
+                        <img src="https://c.ndtvimg.com/2022-04/4v2fo5so_patiala-clashes-pti_640x480_30_April_22.jpg?downsize=330:175" alt="">
+                        <h4>Top Cops Removed, Internet Blocked After Clashes In Punjab's Patiala4:52</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="dabba2">
+                <div class="big">
+                    <img src="https://drop.ndtv.com/albums/ENTERTAINMENT/kiara-advani-an_637869166419733648/637869166419733648_640x480.jpeg" alt="">
+                    <h2>
+                        Kiara Advani And Kriti Sanon Raise Glam Quotient In Thigh-High Slit Dresses | 8 images</h2>
+                </div>
+                <div class="small">
+                    <div>
+                        <img src="https://drop.ndtv.com/albums/ENTERTAINMENT/keep-it-casual-_637868578800900788/637868578800900788_640x480.jpeg" alt="">
+                        <h4>Keep It Casual And Cool Like Ananya, Kiara And Shehnaaz | 7 images</h4>
+                    </div>
+                    <div>
+                        <img src="https://drop.ndtv.com/albums/ENTERTAINMENT/disha-tara-dazz_637868471626060331/637868471626060331_640x480.jpeg" alt="">
+                        <h4>Disha, Tara Dazzle At Heropanti 2 Screening | 10 images</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id = "footer">
+        <div id="box1">
+            <img src="https://drop.ndtv.com/homepage/images/ndtvlogo23march.png" alt="">
+            <p>FOLLOW US ON</p>
+            <ul>
+                <li><i class="fa-brands fa-facebook-square"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram-square"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-twitter-square"></i></li>
+            </ul>
+            <div>
+                <input type="text" placeholder="SEARCH">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div id="box2">
+            <div class="b1">
+                <ul>
+                    <li>ABOUT US</li>
+                    <li>ADVERTISE</li>
+                    <li>EPG SERVICES</li>
+                    <li>CAREERS</li>
+                    <li>CHANNELS</li>
+                    <li>DISCLAIMER</li>
+                    <li>FEEDBACK</li>
+                    <li>INVESTORS</li>
+                    <li>REDRESSALS</li>
+                    <li>SERVICE TERMS</li>
+                    <li>ARCHIVES</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="b2">
+                <ul>
+                    <li>NDTV GROUP SITES</li>
+                    <li>NEWS</li>
+                    <li>BUSINESS</li>
+                    <li>HINDI</li>
+                    <li>MOVIES</li>
+                    <li>CRICKET</li>
+                    <li>FOOD</li>
+                    <li>TECH</li>
+                    <li>TRAINS</li>
+                    <li>ART & DESIGN</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="b3">
+                THIS WEBSITE FOLLOWS THE DNPA CODE OF ETHICS | COPYRIGHT NDTV CONVERGENCE LIMITED 2022.
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
